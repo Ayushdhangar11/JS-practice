@@ -18,10 +18,7 @@ const PORT = 3000;
 
 // Create a connection to the MySQL database
 const connection = mysql.createConnection({
-    host: 'localhost', // Database host
-    user: 'root', // Database user
-    database: 'delta', // Database name
-    password: 'root' // Database password
+   
 });
 
 // Function to generate a fake user
