@@ -1,0 +1,9 @@
+# Ignore specific folders
+CSS/
+bootstrap/
+HTML/
+Express/
+MajorProject/
+mongowithexpress/
+project/
+EJS/

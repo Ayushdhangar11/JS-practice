@@ -1,0 +1,167 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.logo
+{
+  font-family: "PlayfairDisplay", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+.main_box{
+   height: 100vh;
+   width: 100vw;
+    background-image: url("image.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.btn_one
+{
+  position: absolute;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 60px;
+  left: 10px;
+  cursor: pointer;
+}
+
+
+.sidebar_menu
+{
+  position: fixed;
+  /* used to hide the menu and when we click menu bar it will set left to somevalue */
+  left: -350px;
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(255, 225, 225, 0.1);
+  box-shadow: 0 0 6px rgba(255, 225, 225, 0.5);
+  line-height: 30px;
+  transition: 1.5s linear;
+}
+
+.sidebar_menu .logo
+{
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 2px 6px rgba(255, 225, 225, 0.2);
+  line-height: 60px;
+  position: absolute;
+}
+
+.sidebar_menu .logo a{
+  position: absolute;
+  left: 50px;
+  color: rgb(163, 212, 255);
+  text-decoration: 1px underline rgb(141, 202, 255);
+  /* text-decoration: none; */
+  font-size: x-large;
+}
+
+.sidebar_menu .btn_two
+{
+   position: absolute;
+   font-size: x-large;
+   font-weight: 900;
+   left: 270px;
+   top: 14px;
+   opacity: 0.5;
+   
+}
+
+.sidebar_menu .btn_two i
+{
+   position: absolute;
+   font-size: x-large;
+   top: 5px;
+   opacity: 0.5;
+   cursor: pointer;
+}
+
+.sidebar_menu .menu{
+  color: aliceblue;
+  position: absolute;
+  width: 100%;
+  top: 60px;
+}
+
+.sidebar_menu .menu li{
+  margin: 6px;
+  padding: 10px 20px;
+}
+
+.sidebar_menu .menu li,a{
+  color: aliceblue;
+  /* padding-left: 20px; */
+  align-items: center;
+  text-decoration: none;
+  text-shadow: 0 0 6px rgba(255, 225, 225, 0.4);
+  font-size: 20px;
+  cursor:default;
+}
+
+.sidebar_menu .menu i{
+  padding:10px;
+}
+
+.sidebar_menu .social_media 
+{
+  position: absolute;
+  left:25%;
+  bottom: 10px;
+}
+
+.sidebar_menu .social_media i{
+  opacity: 0.6;
+  padding: 3px;
+  font-size: 20px;
+}
+
+#check{
+  display: none;
+}
+
+.sidebar_menu .menu li:hover{
+   box-shadow: 0 0 6px rgba(255, 225, 225, 0.3); 
+   font-size: 30px;
+   
+}
+
+.btn_one:hover{
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.sidebar_menu .btn_two i:hover
+{
+  font-size: 26px;
+}
+
+.btn_one i:hover{
+    font-size: 30px;
+}
+
+.sidebar_menu .social_media i:hover{
+  box-shadow: 0 0 6px rgba(255, 225, 225, 0.3); 
+  opacity: 1;
+  border-radius: 20px;
+  transform: scale(1.2);
+}
+
+
+/*combinators selector which tells for given check button the siblins are shown using tilda sign*/
+#check:checked ~ .sidebar_menu
+{
+  left: 0;
+}
+
+#check:checked ~ .btn_one i
+{
+  opacity: 0;
+}
+
+
+

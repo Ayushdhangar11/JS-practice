@@ -1,0 +1,1 @@
+      avatar: faker.image.avatar(),
